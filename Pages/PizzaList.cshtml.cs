@@ -33,11 +33,13 @@ namespace ContosoPizza.Pages
 
             return RedirectToAction("Get");
         }
+        //¨Prueba de Delete
         public IActionResult OnPostDelete(int id)
         {
             _service.DeletePizza(id);
 
             return RedirectToAction("Get");
+
         }
     }
 }
